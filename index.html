@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Only need one Font Awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body class="bg-black text-white font-[Poppins]">
+    <header class="fixed w-full top-0 bg-black/50 backdrop-blur-sm z-50">
+      <nav class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+          <ul class="flex space-x-8">
+            <li class="group relative">
+              <a
+                href="#home"
+                class="text-white/70 hover:text-red-400 transition-colors px-4 py-2 border-2 border-transparent rounded-lg group-hover:border-red-400"
+              >
+                Home
+              </a>
+            </li>
+            <li class="group relative">
+              <a
+                href="#about"
+                class="text-white/70 hover:text-red-400 transition-colors px-4 py-2 border-2 border-transparent rounded-lg group-hover:border-red-400"
+              >
+                About
+              </a>
+            </li>
+            <li class="group relative">
+              <a
+                href="#contact"
+                class="text-white/70 hover:text-red-400 transition-colors px-4 py-2 border-2 border-transparent rounded-lg group-hover:border-red-400"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="pt-24">
+      <!-- Home Section -->
+      <section
+        id="home"
+        class="min-h-screen flex items-center justify-center bg-black relative overflow-hidden"
+      >
+        <div class="absolute inset-0">
+          <div
+            class="absolute h-96 w-96 -top-10 -left-10 bg-red-700/30 rounded-full blur-3xl animate-blob"
+          ></div>
+          <div
+            class="absolute h-96 w-96 -bottom-10 -right-10 bg-red-700/30 rounded-full blur-3xl animate-blob animation-delay-2000"
+          ></div>
+        </div>
+        <div class="container mx-auto px-6 relative z-10">
+          <div class="text-center max-w-4xl mx-auto">
+            <p class="text-lg mb-4 animate-fade-in tracking-wider">
+              Hi, my name is
+            </p>
+            <h1
+              class="text-6xl md:text-7xl font-bold mb-6 animate-fade-in animation-delay-500 text-red-400 tracking-tight"
+            >
+              Henry Castillo
+            </h1>
+            <p
+              class="text-2xl md:text-3xl text-white/70 mb-12 animate-fade-in animation-delay-1000 tracking-wide"
+            >
+              This is my Project
+            </p>
+            <div
+              class="flex flex-col sm:flex-row justify-center gap-6 animate-fade-in animation-delay-1500"
+            >
+              <a
+                href="https://www.facebook.com/jr.castillo.883297"
+                target="_blank"
+                class="relative px-8 py-4 bg-red-400 text-black rounded-lg hover:bg-red-200 transition-all overflow-hidden group"
+              >
+                <span class="relative z-10 font-medium tracking-wider">
+                  My Facebook
+                </span>
+                <div
+                  class="absolute inset-0 transform translate-y-full bg-red-500 transition-transform group-hover:translate-y-0"
+                ></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section
+        id="about"
+        class="min-h-screen flex items-center py-20 bg-black/90"
+      >
+        <div class="container mx-auto p-10">
+          <h2 class="text-3xl font-bold mb-12 text-red-400 animate-fade-in">
+            About Me
+          </h2>
+          <div class="grid md:grid-cols-2 gap-24 items-center">
+            <div class="space-y-6 animate-fade-in animation-delay-500">
+              <p class="text-white/70 leading-relaxed">
+                Hi, I’m Henry Castillo! I’m passionate about basketball and
+                eating. I love the thrill of playing basketball, whether it’s on
+                the court with friends or watching games. When I’m not playing,
+                you can usually find me enjoying delicious meals. I’m always on
+                the lookout for new food experiences and flavors. As I continue
+                to grow in my hobbies, I’m eager to take on new challenges and
+                share my journey with others!
+              </p>
+
+              <div class="space-y-4">
+                <h3 class="text-xl font-semibold text-red-400">
+                  Technologies I work with:
+                </h3>
+                <div class="grid grid-cols-2 gap-4">
+                  <div
+                    class="tech-item flex items-center gap-2 p-4 border border-red-400 rounded-lg hover:border-red-500 transition-all hover:-translate-y-1 bg-black/30"
+                  >
+                    <i class="fab fa-html5 text-orange-500 text-xl"></i>
+                    <span class="text-white/70">HTML</span>
+                  </div>
+                  <div
+                    class="tech-item flex items-center gap-2 p-4 border border-red-400 rounded-lg hover:border-red-500 transition-all hover:-translate-y-1 bg-black/30"
+                  >
+                    <i class="fab fa-css3-alt text-blue-500 text-xl"></i>
+                    <span class="text-white/70">CSS</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="relative group animate-fade-in animation-delay-1000 rounded-full"
+            >
+              <div class="relative rounded-lg overflow-hidden">
+                <img
+                  src="panget.jpg"
+                  alt="Profile"
+                  class="rounded-xl w-[300px] h-[300px] object-cover transition-transform duration-500"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section
+        id="contact"
+        class="h-screen flex items-center justify-center bg-black/90"
+      >
+        <div class="container text-center flex flex-col items-center space-y-4">
+          <h2 class="text-2xl font-bold mb-4 text-red-400">Contact Info</h2>
+          <p>Phone: 09461046530</p>
+          <p>Email: henrycastillojr0@gmail.com</p>
+          <p>Location: Pantoc Gabaldon, Nueva Ecija, Philippines</p>
+          <!-- Uncomment & fill in if you want social links -->
+          <!--
+        <div class="social-links flex gap-4 mt-4">
+          <a href="#" class="text-2xl"><i class="fab fa-github"></i></a>
+          <a href="#" class="text-2xl"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:artbuliong71@gmail.com" class="text-2xl"
+            ><i class="fas fa-envelope"></i
+          ></a>
+        </div>
+        -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30762.27842433613!2d121.33293966938295!3d15.46910540952818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33974bff8497d0eb%3A0x3c653cdbd587fd6!2sPantoc%2C%20Gabaldon%2C%20Nueva%20Ecija!5e0!3m2!1sen!2sph!4v1744012641684!5m2!1sen!2sph"
+            width="600"
+            height="350"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
